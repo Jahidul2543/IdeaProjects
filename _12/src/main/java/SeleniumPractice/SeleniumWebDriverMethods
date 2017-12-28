@@ -1,0 +1,29 @@
+WebDriver driver = new ChromeDriver();
+1. driver.get() ---> get url
+2. driver.getTitle() ---> return title
+3. getPageSource() ---> return page source code
+4. getCurrentUrl() ---> returns current url
+5. navigate().to() ---> loads a new page in current browser
+6. navigate().back()
+7. navigate().forwad()
+8. navigate().refresh()
+9. close() ---> Close the current window, quitting the browser if it's the last window currently open.
+10.quit()---> Quits this driver, closing every associated window.
+11. findElement(By by)--->Find the first WebElement using the given method. This method is affected by
+ the 'implicit wait' times in force at the time of execution. The findElement(..) invocation will return
+  a matching row, or try again repeatedly until the configured timeout is reached. findElement should
+  not be used to look for non-present elements, use findElements(By) and assert zero length response instead.
+    --> The first matching element on the current page
+12.findElements (By by)---> Find all elements within the current page using the
+  given mechanism. This method is affected by the 'implicit wait' times in force
+  at the time of execution.
+  --> A list of all WebElements, or an empty list if nothing matches
+13. sendKeys() --> Sends keys to the active element.
+14. clear()
+15. click()
+16. isEnabled()
+17. isSelected()
+18. manage().window().maximize()
+19. getText();
+20.
+
