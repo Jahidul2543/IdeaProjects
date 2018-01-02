@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Amazon " parallel="false">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="url" value="http://automationpractice.com/index.php"/>
+
+    <test name="Test Amazon Home" >
+        <classes>
+            <class name="testCases.TestApplication" />
+        </classes>
+    </test>
+
+</suite>

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 /*
-* IN order to use the methods of the Lib class need to extend for other classes.
+* Use Lib Class methods in sub classes
 * */
 public class Lib {
 
