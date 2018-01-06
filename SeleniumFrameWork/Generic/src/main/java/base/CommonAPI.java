@@ -7,6 +7,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
@@ -51,6 +55,16 @@ public class CommonAPI {
 
         }
         return driver;
+    }
+
+    public static String readpropertiesForAmazon(WebDriver driver, String key) throws IOException {
+
+        InputStream fs = new FileInputStream("locator.properties");
+        Properties pro = new Properties();
+        pro.load(fs);
+        String value = pro.getProperty(key);
+        return value;
+
     }
 }
 

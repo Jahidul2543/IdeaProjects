@@ -14,5 +14,6 @@ public class TestApplication extends CommonAPI {
         HomePage hm = PageFactory.initElements(driver, HomePage.class);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         hm.loginButton();
+
     }
 }
